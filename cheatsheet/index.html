@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>My First HTML Document</title>
+  <!-- The Head section contains metdata and liked resources -->
+  <meta charset="utf-8" />
+  <meta name="description" content="This is the elevator pitch for your site" />
+  <meta name="author" content="Masooma Mughal" />
+  <meta name="keywords" content="UALR, UA Little Rock, IT Minor" />
+</head>
+<!-- The attribute code -->
+
+<body class="test">
+  <!-- The Displayed Content -->
+  <h1> HTML5 Reference Document</h1>
+  <section id="forms">
+    <h2 class="section-heading"> Forms</h2>
+    <form action="processing-script.php" method="get">
+      <fieldset>
+        <legend>Sample Form Fields</legend>
+        <label for="full-name">Full Name:<label><input type="text" id="full-name" name="full-name" placeholder="Full Name" />
+            <label for="address"> Address:</label>
+            <textarea id="address" name="address"></textarea>
+            <label for="cmf">Favorite Car Manufacturer</label>
+            <select id="cmf" name="cmf">
+              <option value="null">---</option>
+              <option value="f">Ford</option>
+              <option value="d">Dodge</option>
+              <option value="h">Honda</option>
+              <option value="b">Bentley</option>
+              <option selected> --- </option>
+            </select>
+            <input type="submit" value="Take me to your leader" />
+      </fieldset>
+    </form>
+  </section>
+  <section id="headings"></section>
+  <h2 class="section-heading">Heading</h2>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  </section>
+  <section id="text-based-semantics">
+    <h2 class="section-heading">Text Based Semantics</h2>
+    <p>Lorem ipsum <em>dolor sit amet</em> consectetur adipisicing elit. <strong>Ratione illo cum qui</strong> facere placeat eligendi assumenda, nam <del>libero</del> aspernatur accusantium pariatur repudiandae tenetur provident vitae sequi corrupti minus <sub>subscript</sub> obcaecati veniam.<sup>Superscript</sup></p>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nihil maxime tenetur sapiente illo quae temporibus molestias esse exercitationem.
+      <hr />Maxime voluptatibus totam voluptas ad repellat aliquam eveniet harum suscipit nostrum.
+    </p>
+    <address>
+      Masooma Mughal<br />
+      7222 Havenwood Dr.<br />
+      Benton, AR, 72019
+    </address </section>
+
+    <section id="table">
+      <h2 class="section-heading">Table</h2>
+      <!-- Remove Border Attribute before publishing -->
+      <table border="1">
+        <caption>Grocery List</caption>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Cost</th>
+        </tr>
+        <tr>
+          <td>Soda</td>
+          <td>12</td>
+          <td>.50</td>
+        </tr>
+        <tr>
+          <td>Soda</td>
+          <td>12</td>
+          <td>.50</td>
+        </tr>
+        <tr>
+          <td>Soda</td>
+          <td>12</td>
+          <td>.50</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="lists">
+      <h2 class="section-heading">Lists</h2>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ul>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ol>
+      <h3>Defintion List</h3>
+      <dl>
+        <dt>Defintion Term</dt>
+        <dd>Defintion Description</dd>
+        <dd>Defintion Description</dd>
+        <dd>Defintion Description</dd>
+        <dt>Defintion Term</dt>
+        <dd>Defintion Description</dd>
+        <dd>Defintion Description</dd>
+        <dd>Defintion Description</dd>
+      </dl>
+      <h3>Nested List</h3>
+      <ol>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <ul>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+          <ol start="5">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ol>
+          </li>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+      </ol>
+    </section>
+    <section id="hyperlinks">
+      <h2 class="section-heading">Hyperlinks</h2>
+      <ul>
+        <li><a href="https://ualr.edu#news" target="_blank">Absolute Link</a></li>
+        <li><a href="folder/folder/file.html" title="Relative Link Example">Realative Link</a></li>
+        <li><a href="#headings">Anchor Link</a></li>
+        <li><a href="mailto:email@address.com">Email Link</a></li>
+      </ul>
+    </section>
+    <section id="quotes">
+      <h2 class="section-heading">Quotes</h2>
+      <h3>Blockquote</h3>
+      <blockquote>If you can't explain it simply, you don't understand it well enough. <cite>Albert Einstein</cite></blockquote>
+      <h3>Inline Quote</h3>
+      <p><q>Honey taste good!</q> said Pooh.</p>
+    </section>
+<section id="images">
+    <h2 class="section-heading">Images</h2>
+    <img src="https://placehold.co/200x200" alt="UA Little Rock Logo"/>
+  </section>
+  <section id="structural-elements">
+    <h2 class="section-heading">Structural Elements</h2>
+    <code>&lt;div&gt;</code>
+    <code>&lt;span&gt;</code>
+    <code>&lt;main&gt;</code>
+    <code>&lt;section&gt;</code>
+    <code>&lt;nav&gt;</code>
+    <code>&lt;article&gt;</code>
+    <code>&lt;aside&gt;</code>
+    <code>&lt;header&gt;</code>
+    <code>&lt;footer&gt;</code>
+    <code>&lt;figure&gt;</code>
+    <code>&lt;figcaption&gt;</code>
+  </section>
+</body>
+
+</html>
