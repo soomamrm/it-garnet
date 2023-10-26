@@ -1,0 +1,24 @@
+
+/* Type Selector */
+
+body{
+    background-color: pink;
+}
+/*ID Selector */
+
+#main-heading{
+    color:beige;
+    text-shadow:1px 1px 
+}
+/*Class Selector */
+
+.primary{
+    border: 2px solid beige;
+    padding: 10px;
+}
+
+/* peusdo selector */
+
+a:link, a:visited{
+    color: aliceblue;
+}
