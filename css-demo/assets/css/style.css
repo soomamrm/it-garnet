@@ -41,5 +41,5 @@ html {
   /* 2 Value Shorthand T/B, L/R*/
     margin:40px auto;
     border:2px solid #432818;
-    border-radius:40px;
+    border-radius:10px;
   }
