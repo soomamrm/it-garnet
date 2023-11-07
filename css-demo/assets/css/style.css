@@ -1,0 +1,44 @@
+/* Color Theme Swatches in Hex 
+#EDE0D4
+#E6CCB2
+#DDB892
+#B08968
+#7F5539
+#432818
+#9C6644
+
+
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ---------------Global Styles----------------- */
+
+  body {
+    font-family: 'DM Serif Display', serif;
+    background-color:#9C6644;color:
+  }
+  main{
+    background-color:#E6CCB2;
+    width:80vw;
+     /* Long form */
+  margin-top:40px;
+  margin-right:auto;
+  margin-bottom:40px;
+  margin-left:auto;
+  /* 4 Value Shorthand T,R,B,L*/
+  margin:40px auto 40px auto;
+  /* 2 Value Shorthand T/B, L/R*/
+    margin:40px auto;
+    border:2px solid #432818;
+    border-radius:40px;
+  }
