@@ -20,6 +20,11 @@ html {
   *:after {
     box-sizing: inherit;
   }
+/* ---------------Utility Classes----------------- */
+.container{
+  margin:auto;
+  padding:40px;
+}
 
   /* ---------------Global Styles----------------- */
 
@@ -40,6 +45,68 @@ html {
   margin:40px auto 40px auto;
   /* 2 Value Shorthand T/B, L/R*/
     margin:40px auto;
-    border:2px solid #432818;
+    border:6px solid #432818;
     border-radius:10px;
   }
+  header.primary{
+    background-color:#B08968;
+    background-image: url("../img/sky.jpeg");
+
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding:20px; 
+    display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  border-bottom:3px solid #733910;
+  }
+  
+  header.primary .hgroup{
+    width:70%;
+  }
+  
+  header.primary .hgroup h1 a{
+    color:black;
+    text-decoration:none;
+    text-shadow:1px 1px #fff;
+    font-size:2.4rem;
+  }
+
+  header.primary .hgroup h2{
+    color:black;
+    text-shadow:1px 1px #fff;
+  font-size:1.8em;
+  line-height:1.1
+  }
+
+  header.primary nav{
+    width:30%;
+    margin:0;
+  }
+  header.primary nav ul{
+    list-style-type:none;
+    margin:0;
+  }
+  header.primary nav ul li{
+    margin-bottom: 10px;
+  }
+  header.primary nav a{
+    color: #000;
+    text-shadow:1px #fff;
+    text-decoration: none;
+    background-color:rgba(0,0,0,.3);
+    display:block;
+    padding: 10px;
+    border-radius: 20px 0;
+  border:1px solid #733910;
+  border-right:10px solid #733910 
+
+}
+#content h2, #content h3{
+  color:#432818;
+  border-left:7.5px solid #432818;
+  border-radius:15px 0;
+  padding:7.5px;
+}
+  
+  
