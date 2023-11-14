@@ -99,8 +99,8 @@ html {
     display:block;
     padding: 10px;
     border-radius: 20px 0;
-  border:1px solid #733910;
-  border-right:10px solid #733910 
+  border:1px solid #633200;
+  border-right:10px solid #633200;
 
 }
 #content h2, #content h3{
@@ -109,9 +109,13 @@ html {
   border-radius:15px 0;
   padding:7.5px;
 }
+#blog header, #blog h2 {
+  margin-left: 20px; /* Adjust this value to add space on the left */
+  margin-right: 20px; /* Adjust this value to add space on the right */
+}
 #blog {
-  background: rgb(117, 82, 68);
- background: linear-gradient (4deg, rgb(195, 117, 34) 0%, rgb(115, 62, 16) 100%);
+  background: rgb(105, 62, 20);
+ background: linear-gradient (4deg, rgb(105, 62, 20,1) 0%, rgb(115, 62, 16) 100%);
    padding:20px 0;
    border-top:6px double rgb(155, 85, 19), 72, 10;
    border-bottom:6px double #a6550aa5;
