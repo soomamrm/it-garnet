@@ -21,7 +21,8 @@
             <form id="RegistrationForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" method="post">
                 <div class="input-container">
               <label for="Name" class="formlabel">First Name:</label>
-                <input type="text" id="Name" name="Name" size="30" maxlength="10" data-rule-required="true"  
+                <input type="text" id="Name" name="Name" size="30" maxlength="10" 
+                data-rule-required="true"  
                 data-msg-required="Name is required">
                 <label for="Name" class="error"></label><br>
                 </div>
@@ -37,7 +38,10 @@
                 </div>
                 <div class="input-container">
                 <label for="Email" class="formlabel">Email:</label>
-                <input type="text" id="Email" name="Email" size="30" maxlength="30" data-rule-required="true" 
+                <input type="text" id="Email" name="Email" size="30" maxlength="30" 
+                data-rule-email="true"
+                data-msg-email="Invaild Email"
+                data-rule-required="true" 
                 data-msg-required="Email is required">
                 <label for="Email" class="error"></label><br>
                 </div>
@@ -177,7 +181,7 @@
                                       <option value="WV">West Virginia</option>
                                       <option value="WI">Wisconsin</option>
                                       <option value="WY">Wyoming</option>
-                                </select>
+                                </select> &nbsp; &nbsp; &nbsp;
                                 <input type="text" id="Zip" name="Zip" placeholder=""  size="5" maxlength="5" 
                                 data-rule-required="true"
                                  data-rule-digits="true"
