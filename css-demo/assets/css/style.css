@@ -168,23 +168,21 @@ aside .widget:first-of-type{
   padding:20px;
   color:#ffffff;
 }
-header.primary {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
+
 header.primary nav a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
 article.post {
-  /* ... existing styles ... */
-  transition: transform 0.2s;
+ 
+  transition: transform 0.2s
 }
 
 article.post:hover {
   transform: scale(1.02);
 }
 aside .widget {
-  /* ... existing styles ... */
+
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 article.post header h2 a {
@@ -212,4 +210,16 @@ article.post .post-meta a:hover {
   max-height: 250px; 
   width: auto; 
   height: auto; 
+}
+
+aside .widget {
+  padding: 20px; 
+}
+
+aside .widget p {
+  margin-bottom: 10px; 
+}
+
+aside .widget footer {
+  margin-top: 10px;
 }
