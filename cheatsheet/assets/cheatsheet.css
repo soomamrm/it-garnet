@@ -1,0 +1,107 @@
+body, h1, h2, h3, p, ul, ol, li, table, blockquote, code {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eee3e7;
+  color: #4d394b; /* Darker pink text color */
+}
+
+.test {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ead5dc;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #955d76; /* Darker pink color for headings */
+}
+
+.section-heading {
+  border-bottom: 2px solid #b87490;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #eec9d2;
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+}
+
+label, legend {
+  color: #955d76;
+}
+
+input[type="text"], textarea, select, input[type="submit"] {
+  margin-bottom: 10px;
+  border: 1px solid #b87490;
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #b87490;
+  border-radius: 5px; /* Rounded corners */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+ul, ol, dl {
+  margin-bottom: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 5px;
+}
+
+dl {
+  margin-left: 20px;
+}
+
+a {
+  color: #955d76;
+  text-decoration: none; /* Remove underlines by default */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+  color: #c0392b; /* Darker red on hover */
+}
+
+blockquote {
+  border-left: 2px solid #b87490;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #b87490;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+  margin-bottom: 20px;
+}
+
+#structural-elements code {
+  background-color: #eec9d2;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  border-radius: 5px; /* Rounded corners */
+}
