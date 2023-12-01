@@ -1,24 +1,27 @@
 
-/* Type Selector */
-
-body{
-    background-color: pink;
+body {
+    background-color: #ffdddd; /* light pink */
 }
-/*ID Selector */
-
-#main-heading{
-    color:beige;
-    text-shadow:1px 1px 
+/* ID Selector */
+#main-heading {
+    color: #f6829f; /* pinkish-red */
+    text-shadow: 2px 2px 4px #ffbbc2; /* cool shadow effect */
 }
-/*Class Selector */
-
-.primary{
-    border: 2px solid beige;
+/* Class Selector */
+.primary {
+    border: 2px solid #bcceac; /* light green */
     padding: 10px;
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 0 10px #8b9c80; /* subtle box shadow */
 }
-
-/* peusdo selector */
-
-a:link, a:visited{
-    color: aliceblue;
+/* Pseudo Selector */
+a:link,
+a:visited {
+    color: #8b9c80; /* muted green */
+    text-decoration: none; /* remove underline */
+    transition: color 0.3s ease; /* smooth transition */
+}
+a:hover {
+    color: #f6829f; /* pinkish-red on hover */
+    text-shadow: 2px 2px 4px #ffbbc2; /* cool shadow effect on hover */
 }
