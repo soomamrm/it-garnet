@@ -1,0 +1,45 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #191717;
+    color: #c58177;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #5b4744;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #dba797;
+  }
+  
+  section {
+    margin: 20px;
+  }
+  
+  .section-heading {
+    color: #896b66;
+  }
+  
+  .output {
+    background-color: #896b66;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .code {
+    color: #dba797;
+  }
+  
+  footer {
+    background-color: #5b4744;
+    color: #dba797;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
