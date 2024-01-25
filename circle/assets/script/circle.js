@@ -6,7 +6,7 @@ function displaycircle() {
     // if the form is valid, then make the calculations
     if ($("#CircleForm").valid()) {
         
-         document.getElementById("radius).innerHTML = "";
+         document.getElementById("radius").innerHTML = "";
 
          var leg1; // string representation of the leg1
          var leg1fp; // floating point value of leg1
