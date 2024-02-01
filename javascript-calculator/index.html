@@ -26,21 +26,26 @@
                 <label class="error" for="Operand1" id="Operand1Error"></label>
                 <br><br>
           
+                <label class="formlabel">Operator: </label>
+                <label for="AddOperator">
+                    <input type="radio" name="Operator" id="AddOperator" value="Add" checked>+
+                </label>
+                <label for="SubtractOperator">
+                    <input type="radio" name="Operator" id="SubtractOperator" value="Subtract">-
+                </label>
+                <label for="MultiplyOperator">
+                    <input type="radio" name="Operator" id="MultiplyOperator" value="Multiply">*</label>
+                <label for="DivideOperator">
+                    <input type="radio" name="Operator" id="DivideOperator" value="Divide">/
+                </label>
+                <label for="Operator" class="error" id="OperatorError"></label>
+                <br><br>
+                
                 <label class="formlabel" for="Operand2">Operand 2: </label>
                 <input type="text" id="Operand2" name="Operand2" size="15" maxlength="15"       
                     data-rule-required="true"  data-msg-required="Operand 2 is Required" 
                     data-rule-number="true" data-msg-number="Operand 2 must be a Number">
                 <label class="error" for="Operand2" id="Operand2Error"></label>
-                <br><br>
-
-                <label class="formlabel">Operator: </label>
-                <select id="Operator" name="Operator">
-                    <option value="Add">+</option>
-                    <option value="Subtract">-</option>
-                    <option value="Multiply">*</option>
-                    <option value="Divide">/</option>
-                </select>
-                <label for="Operator" class="error" id="OperatorError"></label>
                 <br><br>
 
                 <label class="formlabel">Result: </label>
@@ -53,3 +58,5 @@
             </fieldset>
         </div>
     </form>
+    <script src="assets/script/javascript.js"></script>
+    
