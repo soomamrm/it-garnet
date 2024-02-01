@@ -1,48 +1,23 @@
-$( "#CircleForm" ).validate({
+$("#CircleForm").validate();
 
-});
+        function displayCircle() {
+            if ($("#CircleForm").valid()) {
+                var radius = parseFloat(document.getElementById("radius").value);
+                
+                var diameter = 2 * radius;
+                var circumference = 2 * Math.PI * radius;
+                var area = Math.PI * radius * radius;
 
-function displaycircle() {
-    // if the form is valid, then make the calculations
-    if ($("#CircleForm").valid()) {
-        
-         document.getElementById("radius").innerHTML = "";
+                document.getElementById("diameter").innerText = diameter.toFixed(2);
+                document.getElementById("circumference").innerText = circumference.toFixed(2);
+                document.getElementById("area").innerText = area.toFixed(2);
+            }
+        }
 
-         var leg1; // string representation of the leg1
-         var leg1fp; // floating point value of leg1
-         var leg2; // string representation of the leg1
-         var leg2fp; // floating point value of leg1
-         var hypotenuse;  // floating point hypotenuse
-         var result; // displayable result
-
-         // read in the legs as a string
-         leg1 = document.getElementById("leg1").value;
-         leg2 = document.getElementById("leg2").value;
-
-         // Convert numbers from strings to Floating Point
-         leg1fp = parseFloat( leg1 ); 
-         leg2fp = parseFloat( leg2 ); 
-
-         // calculate the hypotenuse
-         hypotenuse = calcHypotenuse(leg1fp, leg2fp);
-
-         // display the hypotenuse
-         document.getElementById("hypotenuse").innerHTML = hypotenuse.toString();
-    }
-}
-
-  function calcHypotenuse (leg1value, leg2value)
-  // returns hypotenuse of a right triangle
-  // square root of leg1 squared plus leg2 squared
-  {
-      return Math.sqrt((leg1value*leg1value) + (leg2value*leg2value));
-  }
-  
-  function clearForm()
-{
-    document.getElementById("leg1").value = "";
-    document.getElementById("leg1error").innerHTML = "";
-    document.getElementById("leg2").value = "";
-    document.getElementById("leg2error").innerHTML = "";
-    document.getElementById("hypotenuse").innerHTML = "";
-}
+        function clearForm() {
+            document.getElementById("radius").value = "";
+            document.getElementById("radiuserror").innerText = "";
+            document.getElementById("diameter").innerText = "";
+            document.getElementById("circumference").innerText = "";
+            document.getElementById("area").innerText = "";
+        }
