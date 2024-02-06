@@ -1,5 +1,5 @@
-$("#CircleForm").validate();
 
+$("#CircleForm").validate();
         function displayCircle() {
             if ($("#CircleForm").valid()) {
                 var radius = parseFloat(document.getElementById("radius").value);
