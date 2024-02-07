@@ -23,17 +23,16 @@ function getSelectedOperator() {
 }
 
 function performOperation(operator, operand1, operand2) {
-    switch (operator) {
-        case "Add":
-            return operand1 + operand2;
-        case "Subtract":
-            return operand1 - operand2;
-        case "Multiply":
-            return operand1 * operand2;
-        case "Divide":
-            return operand1 / operand2;
-        default:
-            return NaN;
+    if (operator === "Add") {
+        return operand1 + operand2;
+    } else if (operator === "Subtract") {
+        return operand1 - operand2;
+    } else if (operator === "Multiply") {
+        return operand1 * operand2;
+    } else if (operator === "Divide") {
+        return operand1 / operand2;
+    } else {
+        return NaN;
     }
 }
 
