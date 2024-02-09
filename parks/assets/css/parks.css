@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-image: url('../img/smoky mountains.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for content readability */
+  padding: 20px; /* Add padding to the container to create the margin */
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8); /* Match footer background to container background */
+  padding: 20px; /* Add padding to the footer */
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #004d40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+header h1:hover {
+  color: #ffca28; /* Change color on hover */
+}
+
+header h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffca28; /* Change color on hover */
+}
+
+/* Main content styles */
+.container {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+#content {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.post header {
+  padding: 20px;
+}
+
+.post header img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.post header img:hover {
+  transform: scale(1.05); /* Zoom in image on hover */
+}
+
+.post header h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.post header h2 a {
+  color: #333; /* Change link color */
+  text-decoration: none;
+}
+
+.post header h2 a:hover {
+  color: #004d40; /* Change link color on hover */
+}
+
+.post p {
+  padding: 0 20px 20px;
+}
+
+.post-meta {
+  padding: 0 20px 20px;
+  font-style: italic;
+}
+
+/* Sidebar styles */
+aside {
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+.widget {
+  margin-bottom: 20px;
+}
+
+.widget header h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.widget p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.widget a {
+  color: #004d40;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.widget a:hover {
+  color: #ffca28; /* Change link color on hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #004d40;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer h6 {
+  font-size: 14px;
+}
