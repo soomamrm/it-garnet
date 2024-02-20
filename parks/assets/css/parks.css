@@ -45,11 +45,13 @@ header h1 {
 header h1:hover {
   color: #964B00; /* Change color on hover */
 }
-
-header h2 {
+h2 {
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 20px;
+}
+p{
+  line-height: 1.5rem;
 }
 
 nav ul {
@@ -85,59 +87,23 @@ nav ul li a:hover {
 }
 
 #articles {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .post {
-  flex: 1;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  transition: transform 0.3s;
-}
-
-.post:hover {
-  transform: translateY(-5px); /* Move up slightly on hover */
-}
-
-.post header {
-  padding: 20px;
-}
-
-.post header img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s;
-}
-
-.post header img:hover {
-  transform: scale(1.05); /* Zoom in image on hover */
-}
-
-.post header h2 {
-  margin-top: 10px;
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-.post header h2 a {
-  color: #333; /* Change link color */
-  text-decoration: none;
-}
-
-.post header h2 a:hover {
-  color: #d24e01; /* Change link color on hover */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr .5fr;
+  gap: 1rem;
+  margin: .5rem;
+  background-color: rgb(255, 255, 255, 0.7);
 }
 
 .post p {
-  padding: 0 20px 20px;
-}
-
-.post-meta {
-  padding: 0 20px 20px;
-  font-style: italic;
+  height: auto;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 /* Sidebar styles */
