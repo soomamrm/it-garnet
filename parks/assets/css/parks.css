@@ -30,7 +30,7 @@ body {
 
 /* Header styles */
 header {
-  background-color: #004d40;
+  background-color: #d24e01;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -43,7 +43,7 @@ header h1 {
 }
 
 header h1:hover {
-  color: #ffca28; /* Change color on hover */
+  color: #964B00; /* Change color on hover */
 }
 
 header h2 {
@@ -68,7 +68,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffca28; /* Change color on hover */
+  color: #964B00; /* Change color on hover */
 }
 
 /* Main content styles */
@@ -128,7 +128,7 @@ nav ul li a:hover {
 }
 
 .post header h2 a:hover {
-  color: #004d40; /* Change link color on hover */
+  color: #d24e01; /* Change link color on hover */
 }
 
 .post p {
@@ -162,18 +162,18 @@ aside {
 }
 
 .widget a {
-  color: #004d40;
+  color: #d24e01;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .widget a:hover {
-  color: #ffca28; /* Change link color on hover */
+  color: #964B00; /* Change link color on hover */
 }
 
 /* Footer styles */
 footer {
-  background-color: #004d40;
+  background-color: #d24e01;
   color: #fff;
   text-align: center;
   padding: 10px;
