@@ -92,6 +92,11 @@ nav ul li a:hover {
   grid-template-rows: 1fr;
 }
 
+.post img {
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .post {
   display: grid;
   grid-template-columns: 1fr;
