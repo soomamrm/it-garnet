@@ -5,13 +5,13 @@
 }
 
 /* Body styles */
-body {
-  background-image: url('../img/smoky mountains.jpg');
-  background-size: cover;
-  background-position: center;
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
-}
+  body {
+    background-image: url('../img/smoky mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
 
 .container {
   background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for content readability */
@@ -108,8 +108,7 @@ nav ul li a:hover {
 
 /* Sidebar styles */
 aside {
-  flex: 1;
-  background-color: #f3f3f3;
+  background-color: transparent; /* Change background color to transparent */
   padding: 20px;
 }
 
