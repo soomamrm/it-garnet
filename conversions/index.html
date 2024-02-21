@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Unit Converter">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Bruce Bauer">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/conversions.css">
+</head>
+<body>
+<form id="unit-converter">
+    <div class="formcontainer">
+        <h1>Unit Converter (AJAX) Using Fetch</h1>
+        <fieldset id="detail">
+            <legend>Converter (AJAX)</legend>  
+            <br>
+            
+            <label class="formlabel" for="FromValue">From Value: </label>
+            <input type="text" id="FromValue" name="FromValue" size="15" maxlength="15"
+                    data-rule-required="true"  data-msg-required="From Value is Required" 
+                    data-rule-number="true" data-msg-number="From Value must be a Number">
+            <label for="FromValue" class="error" id="FromValueMsg"></label>
+            <br><br>
+
+            <label class="formlabel" for="FromUnit">From Unit: </label>
+            <select id="FromUnit" name="FromUnit" required>
+                <option value="">Select Units</option>
+                <option value="cm">Centimeters</option>
+                <option value="m">Meters</option>
+                <option value="km">Kilometers</option>
+                <option value="in">Inches</option>
+                <option value="ft">Feet</option>
+                <option value="yd">Yards</option>
+                <option value="mi">Miles</option>
+            </select>
+            <label for="FromUnit" class="error" id="FromUnitMsg"></label>
+            <br><br>
+
+            <label class="formlabel" for="ToUnit">To Unit: </label>
+            <select id="ToUnit" name="ToUnit" required>
+                <option value="">Select Units</option>
+                <option value="cm">Centimeters</option>
+                <option value="m">Meters</option>
+                <option value="km">Kilometers</option>
+                <option value="in">Inches</option>
+                <option value="ft">Feet</option>
+                <option value="yd">Yards</option>
+                <option value="mi">Miles</option>
+            </select>
+            <label for="ToUnit" class="error" id="ToUnitMsg"></label>
+            <br><br>
+
+            <label class="formlabel">Result: </label>
+            <span id="Result"></span>
+            <br><br>
+
+            <input type="button" value="Convert" name="Convert" onclick="convert();">
+            <input type="button" value="Clear" name="Clear" onclick="clearForm();">
+
+        </fieldset>
+    </div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="assets/js/conversions.js"></script>
+</body>
+</html>
