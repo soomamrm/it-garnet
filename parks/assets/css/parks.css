@@ -54,8 +54,16 @@ p{
   line-height: 1.5rem;
 }
 
+nav {
+  background-color: #c66c36;
+  padding: 10px;
+  text-align: center;
+}
+
 nav ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -71,6 +79,25 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #294a18; /* Change color on hover */
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.nav-links li {
+  display: inline-block;
+  margin-right: 50px; /* Add some margin between nav links */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
 }
 
 /* Main content styles */
@@ -89,12 +116,13 @@ nav ul li a:hover {
 #articles {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto; /* Change to auto to adjust row height based on content */
+  gap: 1rem;
 }
 
 .post img {
-  max-width: 100%; /* Ensure the image does not exceed the width of its container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; 
+  height: auto; 
 }
 
 .post {
@@ -106,9 +134,17 @@ nav ul li a:hover {
   background-color: rgb(255, 255, 255, 0.7);
 }
 
+.post a{
+  text-decoration: none;
+}
+
 .post p {
-  height: auto;
+  height: 50px;
   padding: 0rem 1rem 0rem 1rem;
+}
+
+.article-footer{
+  margin-top: auto;
 }
 
 /* Sidebar styles */
