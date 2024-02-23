@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-
+/* Body styles */
 body {
   background-image: url('../img/smoky mountains.jpg');
   background-size: cover;
@@ -14,13 +14,13 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.8); 
-  padding: 20px; 
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for content readability */
+  padding: 20px; /* Add padding to the container to create the margin */
 }
 
 footer {
-  background-color: rgba(255, 255, 255, 0.8); 
-  padding: 20px; 
+  background-color: rgba(255, 255, 255, 0.8); /* Match footer background to container background */
+  padding: 20px; /* Add padding to the footer */
 }
 
 body {
@@ -29,7 +29,7 @@ body {
   color: #333;
 }
 
-
+/* Header styles */
 header {
   background-color: rgba(198, 108, 54, 0.8);
   color: #fff;
@@ -44,7 +44,7 @@ header h1 {
 }
 
 header h1:hover {
-  color: #294a18; 
+  color: #294a18; /* Change color on hover */
 }
 h2 {
   font-size: 24px;
@@ -56,7 +56,7 @@ p{
 }
 
 nav {
-  background-color: rgba(198, 108, 54, 0.8); 
+  background-color: rgba(198, 108, 54, 0.8); /* Orange with transparency */
   padding: 10px;
   text-align: center;
 }
@@ -132,7 +132,7 @@ nav ul li a:hover {
   grid-template-rows: 3fr 1fr .5fr;
   gap: 1rem;
   margin: .5rem;
-  background-color: rgba(255, 255, 255, 0.7); 
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent white color */
 }
 
 .post a{
@@ -170,7 +170,7 @@ aside {
 }
 
 .widget a {
-  color: rgba(198, 108, 54, 0.8); 
+  color: rgba(198, 108, 54, 0.8); /* Transparent orange color */
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -181,8 +181,8 @@ aside {
 
 /* Footer styles */
 footer {
-  background-color: rgba(198, 108, 54, 0.8); 
-  color: #294a18; 
+  background-color: rgba(198, 108, 54, 0.8); /* Transparent orange color */
+  color: #294a18; /* Change footer text color */
   text-align: center;
   padding: 10px;
 }
