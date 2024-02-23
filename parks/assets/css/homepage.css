@@ -78,21 +78,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #294a18; /* Change color on hover */
+  color: #294a18;
 }
 
 .logo img {
   max-width: 100%;
   height: auto;
-  width: 100px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 100px; 
+  height: auto; 
 }
 .nav-links li {
   display: inline-block;
-  margin-right: 50px; /* Add some margin between nav links */
+  margin-right: 50px; 
 }
 
-/* Responsive styles */
+
 @media screen and (max-width: 768px) {
   nav ul li {
     display: block;
@@ -136,6 +136,7 @@ nav ul li a:hover {
 
 .post a{
   text-decoration: none;
+  color:#fff
 }
 
 .post p {
@@ -180,7 +181,7 @@ aside {
 /* Footer styles */
 footer {
   background-color: #c66c36;
-  color: #fff;
+  color: #294a18;
   text-align: center;
   padding: 10px;
 }
