@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Body styles */
+
 body {
   background-image: url('../img/smoky mountains.jpg');
   background-size: cover;
@@ -14,13 +14,13 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for content readability */
-  padding: 20px; /* Add padding to the container to create the margin */
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px; 
 }
 
 footer {
-  background-color: rgba(255, 255, 255, 0.8); /* Match footer background to container background */
-  padding: 20px; /* Add padding to the footer */
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px; 
 }
 
 body {
@@ -29,11 +29,10 @@ body {
   color: #333;
 }
 
-/* Header styles */
+
 header {
   background-color: rgba(198, 108, 54, 0.8);
-  color: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -44,7 +43,7 @@ header h1 {
 }
 
 header h1:hover {
-  color: #294a18; /* Change color on hover */
+  color: #294a18; 
 }
 h2 {
   font-size: 24px;
@@ -56,7 +55,7 @@ p{
 }
 
 nav {
-  background-color: rgba(198, 108, 54, 0.8); /* Orange with transparency */
+  background-color: rgba(198, 108, 54, 0.8); 
   padding: 10px;
   text-align: center;
 }
@@ -117,7 +116,7 @@ nav ul li a:hover {
 #articles {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto; /* Change to auto to adjust row height based on content */
+  grid-template-rows: auto; 
   gap: 1rem;
 }
 
@@ -132,7 +131,7 @@ nav ul li a:hover {
   grid-template-rows: 3fr 1fr .5fr;
   gap: 1rem;
   margin: .5rem;
-  background-color: rgba(255, 255, 255, 0.7); /* Transparent white color */
+  background-color: rgba(255, 255, 255, 0.7); 
 }
 
 .post a{
@@ -151,7 +150,7 @@ nav ul li a:hover {
 
 /* Sidebar styles */
 aside {
-  background-color: transparent; /* Change background color to transparent */
+  background-color: transparent; 
   padding: 20px;
 }
 
