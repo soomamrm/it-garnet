@@ -4,33 +4,34 @@
   box-sizing: border-box;
 }
 
-/* Body styles */
-  body {
-    background-image: url('../img/smoky mountains.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-  }
+
+body {
+  background-image: url('../img/smoky mountains.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
 
 .container {
-  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for content readability */
-  padding: 20px; /* Add padding to the container to create the margin */
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px; 
 }
 
 footer {
-  background-color: rgba(255, 255, 255, 0.8); /* Match footer background to container background */
-  padding: 20px; /* Add padding to the footer */
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px; 
 }
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: #f7f7f7;
   color: #333;
 }
 
-/* Header styles */
+
 header {
-  background-color: #c66c36;
+  background-color: rgba(198, 108, 54, 0.8);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -43,7 +44,7 @@ header h1 {
 }
 
 header h1:hover {
-  color: #294a18; /* Change color on hover */
+  color: #294a18; 
 }
 h2 {
   font-size: 24px;
@@ -55,7 +56,7 @@ p{
 }
 
 nav {
-  background-color: #c66c36;
+  background-color: rgba(198, 108, 54, 0.8); 
   padding: 10px;
   text-align: center;
 }
@@ -131,7 +132,7 @@ nav ul li a:hover {
   grid-template-rows: 3fr 1fr .5fr;
   gap: 1rem;
   margin: .5rem;
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7); 
 }
 
 .post a{
@@ -169,7 +170,7 @@ aside {
 }
 
 .widget a {
-  color: #c66c36;
+  color: rgba(198, 108, 54, 0.8); 
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -180,8 +181,8 @@ aside {
 
 /* Footer styles */
 footer {
-  background-color: #c66c36;
-  color: #294a18;
+  background-color: rgba(198, 108, 54, 0.8); 
+  color: #294a18; 
   text-align: center;
   padding: 10px;
 }

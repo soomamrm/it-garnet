@@ -1,0 +1,67 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url('../img/smoky mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.explore-header {
+    background-color: rgba(198, 108, 54, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.explore-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.explore-main {
+    padding: 20px;
+}
+
+.explore-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.explore-item {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.explore-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.explore-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.explore-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.explore-footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+.explore-footer h6 {
+    font-size: 14px;
+}
