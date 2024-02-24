@@ -26,6 +26,7 @@ body {
     letter-spacing: 1px;
     font-weight: 900;
     line-height: 1;
+    height: 80px;
  }
  
  
@@ -76,6 +77,17 @@ body {
           text-shadow: #fff;
         }
         
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #c66c36;
+  font-weight: 900;
+  height: 48px;
+}
         
   @media all and (max-width: 600px) {
   .header {
