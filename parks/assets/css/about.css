@@ -62,30 +62,19 @@ body {
         }
  
  
-        about-container {
-          max-width: 1200px;
-          margin: 80px auto 0; /* Add margin to the top to avoid overlapping the header */
-          padding: 2rem;
+        .content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           text-align: center;
-      }
-      
-      /* Style the image and about-info section */
-      .about-container img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 10px;
-      }
-      
-      .about-info {
-          text-align: left;
-          background-color: rgba(0, 0, 0, 0.6);
-          padding: 1rem;
-          border-radius: 10px;
-          margin-top: 2rem;
-          color: #fff;
-      }
-      
-      
+          color: #c66c36; 
+          font-weight: 900;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+          background-color: rgba(0, 0, 0, 0.5); 
+          padding: 20px; 
+          border-radius: 10px; 
+        }
 footer {
   position: fixed;
   bottom: 0;
