@@ -1,18 +1,18 @@
 body {
-	height: 100vh;
-	margin: 0;
-	padding: 0;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   vertical-align: baseline;
   background-image: url('../img/smoky mountains.jpg');
   background-size: cover;
   background-position: center;
-}
-.container {
-	display: flex;
-	padding: 0.3rem 0.5rem;
-	border-radius:4%;
-}
-.header {
+ }
+ .container {
+  display: flex;
+  padding: 0.3rem 0.5rem;
+  border-radius:4%;
+ }
+ .header {
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -26,32 +26,34 @@ body {
     letter-spacing: 1px;
     font-weight: 900;
     line-height: 1;
-}
-
+ }
+ 
+ 
     .logo img {
         max-width: 100%;
         height: auto;
-        width: 100px; 
-        height: auto; 
+        width: 100px;
+        height: auto;
         padding-left: 3vh;
     }
-
-	.header a:hover {
-		opacity: 0.6;
-		transition: 0.3s;
+ 
+ 
+  .header a:hover {
+    opacity: 0.6;
+    transition: 0.3s;
         color: #294a18;
-	}
-	.header-nav {
-		align-items: center;
-	}
-		.header-nav a {
-			margin-left : 0.3rem;
-            margin-right: 0.9rem;
-			text-decoration: none;
-			padding: 1rem;
-			color: #c66c36; 
-			z-index: inherit;
-		}
+  }
+  .header-nav {
+    align-items: center;
+  }
+    .header-nav a {
+      margin-left : 0.3rem;
+      margin-right: 0.9rem;
+      text-decoration: none;
+      padding: 1rem;
+      color: #c66c36;
+      z-index: inherit;
+    }
         .background {
             position: relative;
             height: 100%;
@@ -61,16 +63,29 @@ body {
             background-position: center;
             background-size: cover;
         }
-	
-@media all and (max-width: 600px) {
-	.header {
-		position: inherit;
-	}
+ 
+ 
+        .content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color:#c66c36;
+          font-weight: 900;
+          text-shadow: #fff;
+        }
+        
+        
+  @media all and (max-width: 600px) {
+  .header {
+    position: inherit;
+  }
   .header, .header-nav {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
-		align-content: center;
+    align-content: center;
     padding: 0;
-		background-color: #fff;
+    background-color: #fff;
   }
-}
+  } 
