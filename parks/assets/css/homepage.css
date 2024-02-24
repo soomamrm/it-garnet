@@ -1,191 +1,76 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+  vertical-align: baseline;
   background-image: url('../img/smoky mountains.jpg');
   background-size: cover;
   background-position: center;
-  margin: 0;
-  padding: 0;
 }
-
 .container {
-  background-color: rgba(255, 255, 255, 0.8); 
-  padding: 20px; 
+	display: flex;
+	padding: 0.3rem 0.5rem;
+	border-radius:4%;
+}
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    line-height: 1;
 }
 
-footer {
-  background-color: rgba(255, 255, 255, 0.8); 
-  padding: 20px; 
-}
+    .logo img {
+        max-width: 100%;
+        height: auto;
+        width: 100px; 
+        height: auto; 
+        padding-left: 3vh;
+    }
 
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-
-header {
-  background-color: rgba(198, 108, 54, 0.8);
-  padding: 10px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  transition: color 0.3s;
-}
-
-header h1:hover {
-  color: #294a18; 
-}
-h2 {
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
-p{
-  line-height: 1.5rem;
-}
-
-nav {
-  background-color: rgba(198, 108, 54, 0.8); 
-  padding: 10px;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #294a18;
-}
-
-.logo img {
-  max-width: 100%;
-  height: auto;
-  width: 100px; 
-  height: auto; 
-}
-.nav-links li {
-  display: inline-block;
-  margin-right: 50px; 
-}
-
-
-@media screen and (max-width: 768px) {
-  nav ul li {
-    display: block;
-    margin: 10px 0;
+	.header a:hover {
+		opacity: 0.6;
+		transition: 0.3s;
+        color: #294a18;
+	}
+	.header-nav {
+		align-items: center;
+	}
+		.header-nav a {
+			margin-left : 0.3rem;
+            margin-right: 0.9rem;
+			text-decoration: none;
+			padding: 1rem;
+			color: #c66c36; 
+			z-index: inherit;
+		}
+        .background {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-image: url("../img/smoky mountains.jpg"); /* Use the same background image as the body */
+            background-repeat: repeat;
+            background-position: center;
+            background-size: cover;
+        }
+	
+@media all and (max-width: 600px) {
+	.header {
+		position: inherit;
+	}
+  .header, .header-nav {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+		align-content: center;
+    padding: 0;
+		background-color: #fff;
   }
-}
-
-/* Main content styles */
-.container {
-  margin: 20px auto;
-  width: 80%;
-  max-width: 1200px;
-}
-
-#content {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-#articles {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto; 
-  gap: 1rem;
-}
-
-.post img {
-  max-width: 100%; 
-  height: auto; 
-}
-
-.post {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3fr 1fr .5fr;
-  gap: 1rem;
-  margin: .5rem;
-  background-color: rgba(255, 255, 255, 0.7); 
-}
-
-.post a{
-  text-decoration: none;
-  color:#fff
-}
-
-.post p {
-  height: 50px;
-  padding: 0rem 1rem 0rem 1rem;
-}
-
-.article-footer{
-  margin-top: auto;
-}
-
-/* Sidebar styles */
-aside {
-  background-color: transparent; 
-  padding: 20px;
-}
-
-.widget {
-  margin-bottom: 20px;
-}
-
-.widget header h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.widget p {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.widget a {
-  color: rgba(198, 108, 54, 0.8); /* Transparent orange color */
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.widget a:hover {
-  color: #294a18; /* Change link color on hover */
-}
-
-/* Footer styles */
-footer {
-  background-color: rgba(198, 108, 54, 0.8); /* Transparent orange color */
-  color: #294a18; /* Change footer text color */
-  text-align: center;
-  padding: 10px;
-}
-
-footer h6 {
-  font-size: 14px;
 }
