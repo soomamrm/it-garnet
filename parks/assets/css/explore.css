@@ -10,20 +10,22 @@ body {
 .container {
 	display: flex;
 	padding: 0.3rem 0.5rem;
-	background-color:rgba(255, 255, 255, 0.8);
 	border-radius:4%;
 }
 .header {
-	position: fixed;
-	z-index: 10;
-	width: 100%;
-	justify-content: space-between;
-	padding: 0;
-	margin: 0;
-	text-transform: uppercase;
-	font-weight: 900;
-	letter-spacing: 2px;
-	line-height: 2;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    line-height: 1;
 }
 
     .logo img {
@@ -37,27 +39,28 @@ body {
 	.header a:hover {
 		opacity: 0.6;
 		transition: 0.3s;
+        color: #294a18;
 	}
 	.header-nav {
 		align-items: center;
 	}
 		.header-nav a {
 			margin-left : 0.3rem;
+            margin-right: 0.9rem;
 			text-decoration: none;
 			padding: 1rem;
 			color: #c66c36; 
-			z-index: rgba(255, 255, 255, 0.8);
-            background-color: rgba(255, 255, 255, 0.8);
+			z-index: inherit;
 		}
-.background {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	background-image: url("1.jpg");
-	background-repeat: repeat;
-	background-position: center;
-	background-size: cover;
-}
+        .background {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-image: url("../img/smoky mountains.jpg"); /* Use the same background image as the body */
+            background-repeat: repeat;
+            background-position: center;
+            background-size: cover;
+        }
 	
 @media all and (max-width: 600px) {
 	.header {
