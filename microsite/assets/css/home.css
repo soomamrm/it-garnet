@@ -12,20 +12,22 @@ body {
   padding: 0.3rem 0.5rem;
  }
  .header {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.6);;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 900;
-    line-height: 1;
-    height: 80px;
- }
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  line-height: 1;
+  height: 80px;
+}
  
  
     .logo img {
