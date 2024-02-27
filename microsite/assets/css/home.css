@@ -51,7 +51,7 @@ body {
       padding: 1rem;
       color: #c66c36;
       z-index: #fff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
     }
         .background {
             position: relative;
