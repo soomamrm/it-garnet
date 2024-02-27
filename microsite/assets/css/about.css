@@ -52,6 +52,7 @@ body {
   text-decoration: none;
   padding: 1rem;
   color: #c66c36;
+  text-shadow:  2px 2px 4px rgba(0,0,0,0.7);
 }
 
 .background {

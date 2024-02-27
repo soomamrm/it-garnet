@@ -49,6 +49,7 @@ body {
       padding: 1rem;
       color: #c66c36;
       z-index: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     }
         .background {
             position: relative;
@@ -69,7 +70,7 @@ body {
           text-align: center;
           color: #c66c36; 
           font-weight: 900;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
           background-color: rgba(0, 0, 0, 0.5); 
           padding: 20px; 
           border-radius: 10px; 
