@@ -67,7 +67,7 @@ body {
 }
 .about-container {
   width: 80vw;
-  margin: 120px auto 0 auto; /* Adjusted margin to provide space for fixed header */
+  margin: 120px auto 0 auto;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   display: grid;
