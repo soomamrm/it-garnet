@@ -55,15 +55,6 @@ body {
   text-shadow:  2px 2px 4px rgba(0,0,0,0.7);
 }
 
-.background {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: fixed;
-}
 .about-container {
   width: 80vw;
   margin: 120px auto 0 auto;
