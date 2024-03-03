@@ -1,41 +1,71 @@
-async function GetCurrencyData() {
-    const form = $("#myform");
+function GetForexData() {
+    var form = $("#myform");
     form.validate();
-
     if (form.valid()) {
-        const fromCurrency = document.getElementById("FromCurrency").value;
-        const toCurrency = document.getElementById("ToCurrency").value;
-        const apiKey = "951jAjDkFUGivM5hi8EzX2uMnLEPaf2L";
-        const fromDate = document.getElementById("FromDate").value;
-        const toDate = document.getElementById("ToDate").value;
-
-        const url = `https://api.polygon.io/v2/aggs/ticker/C:${fromCurrency}${toCurrency}/range/1/day/${fromDate}/${toDate}?adjusted=true&sort=asc&limit=120&apiKey=${apiKey}`;
+        var baseCurrency = document.getElementById("BaseCurrency").value;
+        var convertToCurrency = document.getElementById("ConvertToCurrency").value;
+        var fromDate = document.getElementById("FromDate").value;
+        var toDate = document.getElementById("ToDate").value;
+        var apiKey = "951jAjDkFUGivM5hi8EzX2uMnLEPaf2L"; // Replace with your API key
+        var url = "https://api.polygon.io/v2/aggs/ticker/C:" + baseCurrency + convertToCurrency + "/range/1/day/" + fromDate + "/" + toDate + "?adjusted=true&sort=asc&limit=120&apiKey=" + apiKey;
         
-        try {
-            const response = await fetch(url);
-            if (response.ok) {
-                const data = await response.json();
-                // Process data and display using Chart.js
-            } else {
-                throw new Error(`Failed to fetch data: ${response.status}`);
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function(data) {
+                DrawChart(data.results);
+            },
+            error: function(xhr, status, error) {
+                console.error("Error:", error);
+                // Display error message to the user
             }
-        } catch (error) {
-            console.error("Error:", error);
-            // Display error message to the user
-        }
+        });
     }
 }
 
-function ClearForm() {
-    document.getElementById("FromCurrency").value = "USD";
-    document.getElementById("ToCurrency").value = "USD";
-    document.getElementById("FromDate").value = "";
-    document.getElementById("ToDate").value = "";
-    clearChart();
+function DrawChart(data) {
+    var forexData = data.map(function(entry) {
+        return {
+            x: new Date(entry.t),
+            y: entry.c
+        };
+    });
+    var ctx = document.getElementById('forexChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            datasets: [{
+                label: 'Forex Data',
+                data: forexData,
+                borderColor: 'blue',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                xAxes: [{
+                    type: 'time',
+                    time: {
+                        unit: 'day'
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Exchange Rate'
+                    }
+                }]
+            }
+        }
+    });
 }
 
-function clearChart() {
-    const canvas = document.getElementById("chartjs-0");
-    const context = canvas.getContext("2d");
-    context.clearRect(0, 0, canvas.width, canvas.height);
+function ClearForm() {
+    $("#myform")[0].reset();
+    ClearChart();
+}
+
+function ClearChart() {
+    var ctx = document.getElementById('forexChart').getContext('2d');
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 }
