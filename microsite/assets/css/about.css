@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 900;
@@ -57,6 +57,7 @@ body {
 
 .about-container h2{
   text-align: center;
+  color:#c66c36;
 }
 
 .about-info p{
@@ -66,9 +67,11 @@ body {
 .about-container {
   width: 80vw;
   margin: 140px auto 0 auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  color: #c66c36;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+  font-weight: 500;
   display: grid;
 }
 
