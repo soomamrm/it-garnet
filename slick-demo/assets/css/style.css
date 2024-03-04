@@ -18,7 +18,29 @@ img{
     grid-template-columns: 180px 1fr;
     padding:2rem;
 }
-
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .card img {
+    max-width: 100%;
+    max-height: 190px; /* Set a fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px 8px 8px 8px; /* Round only the top corners */
+  }
+  
+  .content {
+    padding: 1rem; /* Add padding to the content */
+  }
+  
 /* Customize Previous/Next/Dots/Autoplay */
 
 .slick-autoplay-toggle-button,
