@@ -88,14 +88,14 @@ body {
     }
     } 
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        padding: 20px;
-    }
+    
     
     .grid-item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        margin: 20px;
         margin: 140px auto 0 auto;
         background-color: rgba(0, 0, 0, 0.6);
         padding: 20px;
@@ -117,7 +117,7 @@ body {
     }
 
     .activity img {
-        max-width: 400px;
+        max-width: 100px;
     }
     
     
