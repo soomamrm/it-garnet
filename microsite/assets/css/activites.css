@@ -87,3 +87,37 @@ body {
       background-color: #fff;
     }
     } 
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .grid-item {
+        margin: 140px auto 0 auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .grid-item h2 {
+        color: #c66c36;
+        margin-bottom: 20px;
+    }
+    
+    .activity h3 {
+        color: #c66c36;
+    }
+    
+    .activity p{
+        color:#fff
+    }
+
+    .activity img {
+        max-width: 400px;
+    }
+    
+    
