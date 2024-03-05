@@ -54,15 +54,6 @@ body {
       z-index: #fff;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     }
-        .background {
-            position: relative;
-            height: 100%;
-            width: 100%;
-            background-image: url("../img/smoky mountains.jpg"); /* Use the same background image as the body */
-            background-repeat: repeat;
-            background-position: center;
-            background-size: cover;
-        }
 
         /*main content*/
         .content p{
@@ -155,6 +146,13 @@ body {
       .activity img {
           max-width: 100px;
       }
+
+
+
+      img{
+        max-width:100%;
+    }
+  
         
 footer {
   position: fixed;

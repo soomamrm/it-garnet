@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.fade').slick({
+    $('.about-container').slick({
       dots: true,
       infinite: true,
       speed: 500,
