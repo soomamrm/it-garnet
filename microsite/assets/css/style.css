@@ -62,6 +62,8 @@ body {
             background-position: center;
             background-size: cover;
         }
+
+        /*main content*/
         .content p{
           color:#fff;
         }
@@ -80,6 +82,78 @@ body {
           padding: 20px; 
           border-radius: 10px; 
         }
+
+        /* about content*/
+
+        .about-container h2{
+          text-align: center;
+          color:#c66c36;
+        }
+        
+        .about-info p{
+          margin: 20px;
+        }
+        
+        .about-container {
+          width: 80vw;
+          margin: 140px auto 0 auto;
+          background-color: rgba(0, 0, 0, 0.6);
+          border-radius: 10px;
+          color: #fff;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+          font-weight: 500;
+          display: grid;
+        }
+        
+         .images-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          justify-content: center;
+          margin: 20px;
+          
+        }
+        
+        .about-info {
+          margin: 0.4em;
+          grid-column: 1 / -1;
+          object-fit: cover;
+        }
+        img{
+          max-width:100%;
+        }
+
+        /* activites content*/
+
+        .grid-item {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          justify-content: center;
+          margin: 20px;
+          margin: 140px auto 0 auto;
+          background-color: rgba(0, 0, 0, 0.6);
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .grid-item h2 {
+          color: #c66c36;
+          margin-bottom: 20px;
+      }
+      
+      .activity h3 {
+          color: #c66c36;
+      }
+      
+      .activity p{
+          color:#fff
+      }
+  
+      .activity img {
+          max-width: 100px;
+      }
         
 footer {
   position: fixed;
