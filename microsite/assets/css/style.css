@@ -159,8 +159,7 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
+        
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.6);
         margin: 140px auto 0 auto;
@@ -195,6 +194,23 @@ aside .container .widget {
        color: #c66c36;
        font-weight: 900;
        height: 48px;
+}
+
+
+#wufoo-z1lbx25i0zfi9nk {
+  padding-top: 80px; /* Adjust according to the height of the navbar */
+  text-align: center;
+  margin-top: 20px; /* Adjust the top margin as needed */
+  width:50vw;
+  max-width: 3000px;
+  margin: 40px auto 0 auto;
+
+}
+
+@media all and (max-width: 600px) {
+  .contact-container {
+    padding-top: 140px; /* Adjust for smaller screens */
+  }
 }
         
   @media all and (max-width: 600px) {
