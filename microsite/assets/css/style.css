@@ -77,16 +77,20 @@ body {
 
         /* about content*/
 
-        .fade-container img{
-          max-width: 100%;
+        .fade img {
+          width: 810px; /* Adjust the width value as needed */
+          height: auto;
         }
         
         .fade-container{
-
           margin:40px auto;
           width:70vw;
           /* Set Max Content Width */
           max-width:700px;
+          position: relative;
+           width: 70vw;
+           max-width: 700px;
+           margin: 0 auto; /* Center horizontally */
         }
         
         /* Customize Previous/Next/Dots/Autoplay */
