@@ -78,20 +78,20 @@ body {
         /* about content*/
 
         .fade img {
-          width: 810px; /* Adjust the width value as needed */
+          width: 610px; /* Adjust the width value as needed */
           height: auto;
         }
 
         
         .fade-container {
-          position: relative;
+          position: absolute;
           width: 60vw;
           max-width: 700px;
           margin: 40px auto 0 auto;
           
         }
         
-        /* Customize Previous/Next/Dots/Autoplay */
+        * Customize Previous/Next/Dots/Autoplay */
         
         .slick-autoplay-toggle-button,
         .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
@@ -118,12 +118,13 @@ body {
           display: grid;
           grid-template-columns: 180px 1fr;
           padding:2rem;
-          
+          position:center;
+
         }
         
         .slide{
-          position:relative;
-          margin: 40px auto 0 auto;
+          position: center;
+          margin: 120px auto 0 auto;
         }
         .overlay{
           position:absolute;
