@@ -94,8 +94,8 @@ body {
           text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
           font-weight: 500;
           display: grid;
-          width:70vw;
-          max-width:700px;
+          width:60vw;
+          max-width: 900px;
         }
         
          .images-container {
@@ -134,14 +134,15 @@ body {
         margin: 140px auto 0 auto;
         width:60vw;
         max-width: 900px;
+        border-radius: 10px;
     }
-    
-    aside .container header {
-      grid-column: 1 / -1; /* Span all columns */
-      text-align: center;
-      margin-bottom: 0.5px; /* Adjust the margin to reduce the gap */
-      color: #fff;
-  }
+
+
+aside .container .widget {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
     aside p{
       color:#fff;
     }
