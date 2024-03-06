@@ -77,46 +77,60 @@ body {
 
         /* about content*/
 
-        .about-container h2{
-          text-align: center;
-          color:#c66c36;
+        .fade-container img{
+          max-width: 100%;
         }
         
-        .about-info p{
-          margin: 20px;
+        .fade-container{
+
+          margin:40px auto;
+          width:70vw;
+          /* Set Max Content Width */
+          max-width:700px;
         }
         
-        .about-container {
-          margin: 140px auto 0 auto;
-         background-color:rgba(0, 0, 0, 0.6) ;
-          border-radius: 10px;
-          color: #fff;
-          text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
-          font-weight: 500;
+        /* Customize Previous/Next/Dots/Autoplay */
+        
+        .slick-autoplay-toggle-button,
+        .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+        .slick-dots li button .slick-dot-icon,
+        .slick-dots li.slick-active button .slick-dot-icon {
+        color: white;
+        }
+        
+        /* Customize Previous/Next/Dots/Autoplay - Active State */
+        
+        .slick-next:focus .slick-next-icon,
+        .slick-next:focus .slick-prev-icon,
+        .slick-prev:focus .slick-next-icon,
+        .slick-prev:focus .slick-prev-icon,
+        .slick-dots li button:focus .slick-dot-icon:before,
+        .slick-dots li.slick-active button:focus .slick-dot-icon,
+        .slick-autoplay-toggle-button:focus 
+        {
+          color:black;
+        }
+        
+        .card{
+          height:300px;
           display: grid;
-          width:60vw;
-          max-width: 900px;
+          grid-template-columns: 180px 1fr;
+          padding:2rem;
         }
         
-        
-        
-        .about-info {
-          margin: 0.4em;
-          grid-column: 1 / -1;
-          object-fit: cover;
+        .slide{
+          position:relative;
         }
-        img{
-          max-width:100%;
+        .overlay{
+          position:absolute;
+          bottom:0;
+          left:0;
+          color:#fff;
+          background:rgba(0,0,0,.25);
+          padding:20px;
         }
 
-        .images-container {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 20px;
-          justify-content: center;
-          margin: 20px;
-         
-        } 
+        /*activites content*/
       
       aside .container .widget {
           background-color: rgba(255, 255, 255, 0.7);
