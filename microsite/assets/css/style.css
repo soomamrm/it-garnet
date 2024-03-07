@@ -164,6 +164,7 @@ body {
       img{
         max-width:100%;
         border-radius: 10px;
+        
       }
 
       aside .container {
@@ -184,6 +185,11 @@ aside .container .widget {
     padding: 20px;
     border-radius: 5px;
   }
+
+  aside .container .widget:hover {
+    transform: scale(1.05); /* Increase the size of the widget container on hover */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
 
   aside h2{
     color:#c66c36
