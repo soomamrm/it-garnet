@@ -2,7 +2,7 @@
 body {
     background-image: url('../img/cherry-island.jpeg'); /* Background image */
     background-size: cover; /* Cover the entire viewport */
-    font-family: Arial, sans-serif; /* Use a common sans-serif font for better readability */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font as primary, fallback to sans-serif if not available */
     margin: 0; /* Remove default margin */
     padding: 20px; /* Add padding for better spacing */
  }
@@ -35,12 +35,13 @@ body {
  
  
 .grid-item {
-    background-color: rgba(95, 1, 38, 0.6); /* Semi-transparent white background for each grid item */
+    background-color: rgba(95, 1, 38, 0.7); /* Semi-transparent white background for each grid item */
     border-radius: 10px; /* Rounded corners for grid items */
     padding: 20px; /* Padding for grid items */
     text-align: center; /* Center align text */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Shadow effect */
     transition: all 0.3s ease; /* Smooth transition for hover effect */
+    font-weight: bold; /* Make the font in grid items bolder */
 }
 
 section:nth-of-type(1) h2 {
