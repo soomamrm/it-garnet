@@ -13,8 +13,8 @@ header {
 }
 
 #main-heading {
-    color: #fff; /* Pinkish-red */
-    text-shadow: 2px 2px 4px #000; /* Cool shadow effect */
+    color: #000; /* Pinkish-red */
+    text-shadow: 2px 2px 4px #fff; /* Cool shadow effect */
 }
 
 .primary {
