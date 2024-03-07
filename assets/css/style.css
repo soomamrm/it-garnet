@@ -1,6 +1,7 @@
 
 body {
-    background-color:('../img/wedding dresses board.jpeg') ; /* Set background to transparent */
+    background-image: url('../img/coolio.jpeg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
     font-family: Arial, sans-serif; /* Use a common sans-serif font for better readability */
     margin: 0; /* Remove default margin */
     padding: 20px; /* Add padding for better spacing */
@@ -12,8 +13,8 @@ header {
 }
 
 #main-heading {
-    color: #ff6593; /* pinkish-red */
-    text-shadow: 2px 2px 4px #c47687; /* cool shadow effect */
+    color: #fff; /* Pinkish-red */
+    text-shadow: 2px 2px 4px #000; /* Cool shadow effect */
 }
 
 .primary {
@@ -22,25 +23,27 @@ header {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid layout */
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Gap between grid items */
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for each grid item */
-    border-radius: 5px; /* Rounded corners for grid items */
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent white background for each grid item */
+    border-radius: 10px; /* Rounded corners for grid items */
+    padding: 20px; /* Padding for grid items */
+    text-align: center; /* Center align text */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
 a {
-    color: #8b9c80; /* muted green */
-    text-decoration: none; /* remove underline */
-    transition: color 0.3s ease; /* smooth transition */
+    color: #fff; /* Muted green */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition */
 }
 
 a:hover {
-    color: #f6829f; /* pinkish-red on hover */
-    text-shadow: 2px 2px 4px #ffbbc2; /* cool shadow effect on hover */
+    color: #000000; /* Pinkish-red on hover */
+    text-shadow: 2px 2px 4px #4a4747; /* Cool shadow effect on hover */
 }
 
 .icon {
