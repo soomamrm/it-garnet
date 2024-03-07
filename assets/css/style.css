@@ -1,27 +1,49 @@
 
 body {
-    background-color: #ffdddd; /* light pink */
+    background-color: ; /* Set background to transparent */
+    font-family: Arial, sans-serif; /* Use a common sans-serif font for better readability */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding for better spacing */
 }
-/* ID Selector */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #main-heading {
-    color: #f6829f; /* pinkish-red */
-    text-shadow: 2px 2px 4px #ffbbc2; /* cool shadow effect */
+    color: #ff6593; /* pinkish-red */
+    text-shadow: 2px 2px 4px #c47687; /* cool shadow effect */
 }
-/* Class Selector */
+
 .primary {
-    border: 2px solid #bcceac; /* light green */
-    padding: 10px;
-    border-radius: 10px; /* rounded corners */
-    box-shadow: 0 0 10px #8b9c80; /* subtle box shadow */
+    border: none; /* Remove border */
 }
-/* Pseudo Selector */
-a:link,
-a:visited {
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for each grid item */
+    border-radius: 5px; /* Rounded corners for grid items */
+    padding: 10px;
+}
+
+a {
     color: #8b9c80; /* muted green */
     text-decoration: none; /* remove underline */
     transition: color 0.3s ease; /* smooth transition */
 }
+
 a:hover {
     color: #f6829f; /* pinkish-red on hover */
     text-shadow: 2px 2px 4px #ffbbc2; /* cool shadow effect on hover */
+}
+
+.icon {
+    margin-right: 5px; /* Add some space between the icon and the text */
+    font-size: 20px; /* Increase the icon size */
 }
