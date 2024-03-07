@@ -132,7 +132,7 @@ body {
           bottom:0;
           left:0;
           color: #fff;
-          background:rgba(0,0,0,0.5);
+          background:rgba(255, 255, 255, 0.7);
           padding:20px;
         }
         
@@ -145,7 +145,7 @@ body {
         /*activites content*/
       
       aside .container .widget {
-          background-color: rgba(255, 255, 255, 0.7);
+          background-color: rgba(0,0,0,0.5);
           padding: 20px;
           border-radius: 5px;
       }
