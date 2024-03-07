@@ -151,9 +151,10 @@ body {
         }
 
         aside .container .widget:hover{
-          
+          transform: translateY(-5px); /* Move item slightly up on hover */
+           box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+
         }
-        
         aside h2 {
             color: #c66c36;
         }
