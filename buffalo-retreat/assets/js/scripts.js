@@ -12,3 +12,5 @@ $(document).ready(function() {
     });
     
   });
+
+  jQuery('select').wrap('<div class="select-wrapper" />');
