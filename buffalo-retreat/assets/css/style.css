@@ -85,11 +85,11 @@ section,img {
  
   .page {
     display: block;
-    
     top: 50%;
     left: 50%;
     margin: -17px -54px;
   }
+
   
   .select-dropdown {
     position: relative;
